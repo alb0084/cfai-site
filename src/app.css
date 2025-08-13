@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@reference "tailwindcss";
+
+/* Sfondo globale + font */
+@layer base {
+    body {
+        background-color: #f5f7fa;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+/* ✅ Classi personalizzate */
+@layer components {
+    .header {
+        @apply py-1 px-3 bg-white flex items-center justify-between border-b border-gray-300;
+        font-size: 1.05rem;
+        /* leggermente più grande */
+    }
+
+    .logo {
+        @apply h-8 w-8 rounded-md object-cover;
+    }
+
+    .header-btn {
+        @apply bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-blue-500 text-base font-medium transition;
+        font-size: 0.95rem;
+        /* un pelo più leggibile */
+    }
+
+
+    .hero {
+        @apply py-16 text-center;
+    }
+
+    .hero-title {
+        @apply text-5xl font-bold mb-4;
+        /* aumentato da 4xl a 5xl */
+    }
+
+    .hero-subtitle {
+        @apply text-xl text-gray-600 mb-6;
+        /* aumentato da lg a xl */
+    }
+
+    .hero-btn {
+        @apply bg-blue-600 text-white px-7 py-3 rounded-lg hover:bg-blue-700 font-medium transition;
+        font-size: 1.05rem;
+    }
+
+    .guida {
+        @apply max-w-4xl py-12 px-4;
+        margin-left: 630px;
+    }
+
+    .guida-title {
+        @apply text-3xl font-semibold mb-6;
+        /* aumentato da 2xl a 3xl */
+    }
+
+    .guida-list {
+        @apply space-y-2 text-gray-700 list-inside list-decimal;
+        font-size: 1.05rem;
+    }
+
+    .container-hero-img {
+        @apply flex w-full flex-col items-center;
+    }
+
+
+    .container-hero-img .cfai-hero-img {
+        @apply h-[900px] w-[900px] object-contain;
+    }
+
+}
