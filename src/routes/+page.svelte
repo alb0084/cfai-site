@@ -7,6 +7,12 @@
 	import UseCases from '$lib/components/sections/UseCases/UseCases.svelte';
 	import Pricing from '$lib/components/sections/Pricing/Pricing.svelte';
 	import Footer from '$lib/components/sections/Footer/Footer.svelte';
+	if (typeof window !== 'undefined') {
+		fetch('/scripts/counter.php')
+			.then((res) => res.json())
+			.then((data) => console.log('✅ Visite:', data.visits))
+			.catch((err) => console.error('❌ Errore counter:', err));
+	}
 </script>
 
 <main class="site-wrap">
