@@ -162,4 +162,9 @@
     .features-grid {
         grid-template-columns: 1fr;
     }
+
+    .features-grid .feature-card:nth-child(-n+3),
+    .features-grid .feature-card:nth-child(n+4) {
+        grid-column: auto;
+    }
 }

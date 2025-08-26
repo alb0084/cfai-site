@@ -45,3 +45,12 @@
     outline: 2px solid #fff;
     outline-offset: 2px;
 }
+
+
+
+@media (max-width: 1024px) {
+
+    .fab-up {
+        visibility: hidden;
+    }
+}

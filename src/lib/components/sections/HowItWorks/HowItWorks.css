@@ -8,10 +8,10 @@
 }
 
 .how-it-works .new-title {
-    top: 60px;
+    top: 0;
     position: absolute;
-    height: 70px;
-    width: 50%;
+    height: 80px;
+    width: 100%;
     background: #f5f7fa;
     text-align: center;
     font-size: 2rem;
@@ -23,6 +23,7 @@
 .how-it-works .media {
     width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 /* immagine grande ma fluida: non scende sotto 720px, 
@@ -80,5 +81,18 @@
         height: 48px;
         padding: 0 24px;
         font-size: 14px;
+    }
+
+    .how-it-works .new-title {
+        top: -30px;
+        position: absolute;
+        height: 55px;
+        width: 100%;
+        background: #f5f7fa;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #111;
+        margin: 0;
     }
 }

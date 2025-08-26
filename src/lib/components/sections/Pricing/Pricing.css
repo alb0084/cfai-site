@@ -145,4 +145,8 @@
         width: 100%;
         max-width: 520px;
     }
+
+    .pricing-cta {
+        margin-left: 38px;
+    }
 }

@@ -3,12 +3,13 @@
 </script>
 
 <section class="how-it-works">
-	<div class="new-title">How It Works</div>
 	<div class="media">
+		<div class="new-title">How It Works</div>
 		<img src={HowItWorks} alt="How it works section" />
 	</div>
 
-	<a href="/CFAI_reference_guide.pdf"
+	<a
+		href="/CFAI_reference_guide.pdf"
 		download="CFAI_reference_guide.pdf"
 		class="download-btn"
 		aria-label="Download user guide"

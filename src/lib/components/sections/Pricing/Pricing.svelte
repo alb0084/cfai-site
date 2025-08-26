@@ -1,6 +1,6 @@
 <script>
 	import CTA from './CTA.svelte';
-	import imageSrc from '$lib/assets/robotCTA.png';
+	import imageRoboCTASrc from '$lib/assets/robotCTA.png';
 	import BackToTop from './BackToTop.svelte'; // 👈
 </script>
 
@@ -50,13 +50,12 @@
 		</div>
 	</article>
 
-	<!-- 👇 CTA qui sotto -->
 	<div class="pricing-cta">
 		<CTA
 			title="Start Enhancing Your Thinking Today"
 			subtitle="Experience real-time cognitive enhancement with Cognitive Flow AI."
 			buttonLabel="Download Now"
-			{imageSrc}
+			{imageRoboCTASrc}
 		/>
 	</div>
 </section>

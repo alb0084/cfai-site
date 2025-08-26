@@ -135,15 +135,15 @@
 @media (max-width: 540px) {
 
     .cta {
-        width: 69%;
+        width: 59%;
     }
 
     .cta-inner {
-        flex-direction: column;
-        align-items: flex-start;
+        padding-top: 90px;
     }
 
     .cta-media {
         height: 220px;
+        visibility: hidden;
     }
 }

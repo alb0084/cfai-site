@@ -4,7 +4,7 @@
 	export let title = 'Start Enhancing Your Thinking Today';
 	export let subtitle = 'Experience real-time cognitive enhancement with Cognitive Flow AI.';
 	export let buttonLabel = 'Download Now';
-	export let imageSrc = '';
+	export let imageRoboCTASrc = '';
 	let imageAlt = 'Robot Image';
 
 	// immagine a destra (metti il tuo path)
@@ -32,7 +32,7 @@
 		</div>
 
 		<div class="cta-media">
-			<img src={imageSrc} alt={imageAlt} />
+			<img src={imageRoboCTASrc} alt={imageAlt} />
 		</div>
 	</div>
 </section>
