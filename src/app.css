@@ -6,14 +6,38 @@
 
 /* Sfondo globale + font */
 @layer base {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     body {
         background-color: #f5f7fa;
         font-family: 'Poppins', sans-serif;
+        margin:0
     }
 }
 
 /* ✅ Classi personalizzate */
 @layer components {
+
+    /* evita scroll orizzontale globale */
+    .site-wrap {
+        @apply overflow-x-hidden;
+    }
+
+    /* contenitore principale della pagina */
+    .site-container {
+        @apply  mx-auto;
+
+    }
+
+    /* spaziatura verticale coerente tra sezioni (opzionale) */
+    .site-container>* {
+        @apply my-12 sm:my-16;
+    }
+
     .header {
         @apply py-1 px-3 bg-white flex items-center justify-between border-b border-gray-300;
         font-size: 1.05rem;
@@ -52,7 +76,6 @@
 
     .guida {
         @apply max-w-4xl py-12 px-4;
-        margin-left: 630px;
     }
 
     .guida-title {
@@ -71,7 +94,7 @@
 
 
     .container-hero-img .cfai-hero-img {
-        @apply h-[900px] w-[900px] object-contain;
+        @apply max-w-full h-auto object-contain;
     }
 
 }

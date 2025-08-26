@@ -1,0 +1,143 @@
+.use-cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.use-cases .uc-list {
+    position: absolute;
+    top: 227px;
+    width: 600px;
+    right: 153px;
+    height: 505px;
+}
+
+.use-cases .uc-list .uc-item {
+    margin-bottom: 9px;
+    height: 100px;
+    margin-bottom: 5px;
+    position: relative;
+    /* contenitore fisso */
+    overflow: visible;
+    /* evita che il contenuto "esca" */
+}
+
+.use-cases .uc-list .uc-item-content {
+    transform: translateX(0px);
+    transition:
+        opacity .1s ease-in,
+        transform .3s ease-in,
+        height .2s ease-in .2s;
+    /* 👈 delay 0.2s */
+
+    height: 100%;
+    width: 274px;
+    font: 100 13px/16.4px 'Open Sans', sans-serif;
+    color: #111;
+
+    opacity: 0;
+
+    border-radius: 12px;
+    border: 0.4px solid rgba(41, 128, 214, 0.3);
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px);
+    padding: 16px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.use-cases .uc-list .uc-item:hover .uc-item-content {
+    opacity: 1;
+    height: 60px;
+    transform: translateX(320px);
+    transition:
+        opacity .2s ease-out,
+        transform .2s ease-out;
+}
+
+/* Head */
+.uc-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 300px;
+    /* come reference layout */
+    align-self: stretch;
+}
+
+.uc-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0;
+}
+
+.uc-subtitle {
+    color: #4A4C56;
+    font: 400 18px/32.4px 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* Media */
+.uc-media {
+    width: 100%;
+    max-width: 1320px;
+    max-height: 600px;
+    /* cornice centrale */
+    display: flex;
+    justify-content: center;
+}
+
+.uc-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    /* opzionale, per coerenza visiva */
+}
+
+/* CTA button (stile come sopra) */
+.uc-cta {
+    margin-top: 8px;
+}
+
+.btn-primary__ {
+    display: flex;
+    height: 56px;
+    padding: 11px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--Primary-Color, #0066FF);
+    color: #fff;
+    font: 500 16px/28.8px 'Inter', sans-serif;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background .25s ease;
+}
+
+.btn-primary__:hover {
+    background: #0050CC;
+}
+
+.btn-primary__[disabled] {
+    cursor: not-allowed !important;
+    opacity: 0.6;
+}
+
+
+.arrow {
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* Responsive touch */
+@media (max-width: 1024px) {
+    .uc-head {
+        padding: 0 24px;
+    }
+}

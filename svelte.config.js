@@ -10,9 +10,6 @@ const config = {
 			base: '',
 			relative: false
 		},
-		prerender: {
-			entries: ['/', '/en/', '/it/']
-		},
 	}
 };
 
