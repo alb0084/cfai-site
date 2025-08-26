@@ -12,7 +12,7 @@ const config = {
 			relative: false
 		},
 		alias: {
-			$lib: path.resolve('./src/lib') // 👈 alias corretti
+			$lib: path.resolve('./src/lib')
 		}
 	}
 };
