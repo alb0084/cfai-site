@@ -7,12 +7,19 @@
 	import UseCases from '$lib/components/sections/UseCases/UseCases.svelte';
 	import Pricing from '$lib/components/sections/Pricing/Pricing.svelte';
 	import Footer from '$lib/components/sections/Footer/Footer.svelte';
-	if (typeof window !== 'undefined') {
-		fetch('/scripts/counter.php')
-			.then((res) => res.json())
-			.then((data) => console.log('✅ Visite:', data.visits))
-			.catch((err) => console.error('❌ Errore counter:', err));
-	}
+
+	import { onMount } from 'svelte';
+	let visits: number | null = null;
+
+	onMount(async () => {
+		const res = await fetch(`/scripts/counter.php?ts=${Date.now()}`, {
+			cache: 'no-store',
+			credentials: 'include' 
+		});
+		const data = await res.json();
+		visits = data.visits;
+		console.log('📊 visits:', visits);
+	});
 </script>
 
 <main class="site-wrap">
