@@ -140,3 +140,51 @@
     width: 20px;
     height: 20px;
 }
+
+
+
+
+/* Responsive adjustments for Hero section */
+@media (max-width: 900px) {
+
+    .hero-blob {
+        right: 261px;
+
+    }
+
+}
+
+@media (max-width: 792px) {
+
+    .hero-blob {
+        right: 220px;
+
+    }
+
+}
+
+@media (max-width: 792px) {
+
+    .hero-blob {
+        right: 110px;
+
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    .hero-blob {
+        right: 167px;
+
+    }
+
+}
+
+
+@media (max-width: 375px) {
+
+    .hero-blob {
+        right: 20px;
+
+    }}
